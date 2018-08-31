@@ -1,0 +1,8 @@
+endpoint: https://us1.prisma.sh/sam-li/graphql/dev
+
+datamodel: datamodel.graphql
+secret: mysecret123
+
+hooks:
+  post-deploy:
+    - graphql get-schema --project database
